@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Playfair+Display&family=Source+Code+Pro:ital,wght@1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@1,300&family=Afacad:wght@600&family=Barlow:wght@200&family=Comic+Neue&family=PT+Sans:ital@1&family=Playfair+Display&family=Source+Code+Pro:ital,wght@1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container > * {
+  margin: 5%;
+}
+
+.resume-comp {
+  height: auto;
+  min-width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-comp > * {
+  margin: 0.7%;
+}
+
+.resume-comp > * > * {
+  margin: 0.4%;
+}
+
+.resume-photo {
+  background-color: black;
+  width: 30%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.resume-basic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.resume-comp h3,
+h1 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: bolder;
+}
+
+.input {
+  font-style: italic;
+  font-weight: lighter;
+  font-family: "PT Sans", sans-serif;
+}
+
+.contact,
+.experience,
+.education {
+  border-bottom: 2px solid black;
+}
+
+.resume h1 {
+  font-size: 2em;
+}
+
+.skills {
+  list-style: inside;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: flex-start;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.skills li {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
+.skills > * {
+  margin: 2%;
+}
+
+.skills h1 {
+  align-self: flex-start;
+}
+
+.form {
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form > * {
+  margin: 2%;
+}
+
+.form-top {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsla(288, 18%, 54%, 1);
+}
+
+.form-top > * {
+  margin: 3%;
+}
+
+.form-general-info {
+  background-color: hsla(288, 18%, 54%, 1);
+}
+
+.general-info-comp > *:not(div:last-child) {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.general-info-comp .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.education-info {
+  color: white;
+  background-color: hsla(288, 18%, 54%, 1);
+}
+
+.education-comp > *:not(div:last-child) {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="date"] {
+  width: 20%;
+}
+
+.education-comp .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.experience-info {
+  background-color: hsla(288, 18%, 54%, 1);
+}
+
+.experience-comp > *:not(div:last-child) {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-comp .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+textarea {
+  width: 90%;
+  max-width: 600px;
+  max-height: 200px;
+}
+
+.skills-info {
+  background-color: hsla(288, 18%, 54%, 1);
+}
+
+.skills-comp input {
+  height: 60%;
+}
+
+.skills-comp button {
+  font-size: 0.6em;
+}
+
+.skills-comp ul {
+  display: flex;
+  flex-direction: column;
+  list-style: square;
+  margin: 5%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.skills-comp button:not(.add-new-skill) {
+  margin: 4%;
+}
+
+.skills-comp > * {
+  margin: 1%;
+}
+
+.skills-comp > * > * {
+  margin: 1%;
+}
+
+.skills-comp li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-new-skill {
+  max-height: 20px;
+}
+.icon {
+  width: 8%;
+  height: auto;
+}
+
+.arrow {
+  width: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > * {
+  margin: 2%;
+}
+
+@media print {
+  .resume-comp {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
